@@ -1,3 +1,6 @@
+$primary_color: #fbb40f;
+$white_text: #fff;
+
 @font-face {
     font-family: 'Lobster';
     font-style: normal;
@@ -88,3 +91,98 @@
     
 }
 
+// Button
+.btn {
+    outline: none;
+    text-decoration: none;
+    padding: 6px 16px;
+    min-width: 60px;
+    background-color: #8e9eab;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        opacity: 0.9;
+    }
+    &-primary {
+        background-color: $primary_color;
+        color: $white_text;
+    }
+}
+
+.button-section {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+// Modal 
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-140px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;;
+        transform: translateY(0);
+    }
+}
+
+.modal-layout {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.modal-container {
+    background: #fff;
+    width: 600px;
+    max-width: calc(100% - 32px);
+    max-height: 500px;
+    padding: 30px 24px;
+    position: relative;
+    border-radius: 4px;
+    animation: modalFadeIn ease .5s;
+}
+
+.modal-header {
+    height: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 36px;
+    border-bottom: 1px solid #000;
+    &__title {
+        color: $primary_color;
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.form-label {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    padding: 5px 8px;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+   
+}
