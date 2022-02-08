@@ -14,7 +14,7 @@ function Modal({ toggle, save }) {
             description,
             deadline,
         }
-        save(newTask)
+        save(newTask);
     }
 
     return (

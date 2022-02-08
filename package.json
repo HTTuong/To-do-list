@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-hot-loader": "^4.13.0",
     "react-modal": "^3.14.4",
     "react-scripts": "5.0.0",
     "reactstrap": "^9.0.1",
@@ -36,6 +37,14 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "babel": {
+    "plugins": [
+      "react-hot-loader/babel"
+    ],
+    "presets": [
+      "react-app"
     ]
   }
 }
