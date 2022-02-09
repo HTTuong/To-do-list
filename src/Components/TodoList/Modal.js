@@ -13,6 +13,7 @@ function Modal({ toggle, save }) {
             taskName,
             description,
             deadline,
+            completed: false
         }
         save(newTask);
     }

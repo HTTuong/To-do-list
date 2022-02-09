@@ -13,6 +13,7 @@ function UpdateModal({ toggleUpdate, task, update, index }) {
             taskName,
             description,
             deadline,
+            completed: false
         }
         update(updatedTask, index)
     }

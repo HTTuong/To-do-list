@@ -29,6 +29,10 @@ function Card({ index, taskObj, deleteTask, taskList, update }) {
                     </ul>
                 </div>
                 <div className="card-function">
+                    <div className="card-function__complete">
+                        <input type="checkbox" className="card-function__complete-checkbox"></input>
+                        <span className="card-function__complete-title">Mark done</span>
+                    </div>
                     <i className="card-function__edit far fa-edit" onClick={() => setOpenUpdateModal(true)}></i>
                     <i className="card-function__delete fas fa-trash" onClick={handleDeleteTask}></i>
                 </div>
