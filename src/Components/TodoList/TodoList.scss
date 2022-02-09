@@ -281,6 +281,7 @@ $white_text: #fff;
         &__complete {
             position: absolute;
             left: 15px;
+            bottom: 5px;
             display: flex;
             align-items: center;
             &-title {
