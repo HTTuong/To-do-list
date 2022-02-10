@@ -10,10 +10,10 @@ function UpdateModal({ toggleUpdate, task, update, index }) {
 
     const handleUpdateTask = () => {
         let updatedTask = {
+            ...task,
             taskName,
             description,
             deadline,
-            completed: false
         }
         update(updatedTask, index)
     }

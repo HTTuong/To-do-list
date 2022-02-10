@@ -3,17 +3,20 @@ import './TodoList.scss';
 
 function Modal({ toggle, save }) {
 
-
+    // State of text form
     const [taskName, setTaskName] = useState('');
     const [description, setDescription] = useState('');
     const [deadline, setDeadline] = useState('');
+
+    // State of select form
+    const [status, setStatus] = useState('');
 
     const handleSaveTask = () => {
         const newTask = {
             taskName,
             description,
             deadline,
-            completed: false
+            status,
         }
         save(newTask);
     }
@@ -37,6 +40,14 @@ function Modal({ toggle, save }) {
                         <div className="form-group">
                             <label htmlFor="deadline" className="form-label">Deadline</label>
                             <input id="deadline" className="form-control" type="text" placeholder="Set deadline" value={deadline} onChange={(e) => setDeadline(e.target.value)}></input>
+                        </div>
+                        <div className="select-form">
+                            <select className="select" onChange={(e) => setStatus(e.target.value)}>
+                                <option>Select the status</option>
+                                <option value="true">Done</option>
+                                <option value="In Progress">In Progress</option>
+                                <option value="Not yet">Not yet</option>
+                            </select>
                         </div>
                     </form>
                 </div>
