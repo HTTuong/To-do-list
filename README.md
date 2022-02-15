@@ -1,10 +1,10 @@
 # Getting Started with Create React App
-This project is about To do List.
+This is To do List project.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can interact with the UI to create a task
+In the project directory, you can interact with the UI to create, update and delete a task. An existing task can be updated or deleted. A task created contains its title, description, dealine and status. There are three statuses when creating a task such as Done, In progress and Not Yet. Each task with a specific status will display with a particular color (green for completed tasks, yellow for in-progress tasks and red for not-begin tasks). Finally, a task can be marked done by checking on the checkbox in each task card and the color of card will change to green(completed task). Completed tasks cannot be updated and can be deleted. 
 
 ### `npm start`
 
