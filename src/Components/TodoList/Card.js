@@ -66,7 +66,7 @@ function Card({ index, taskObj, deleteTask, update }) {
                         <span className="card-function__complete-title">Mark done</span>
                     </div>
                     <i className="card-function__edit far fa-edit" onClick={() => setOpenUpdateModal(true)} style={{ display: hideFunction(taskObj) }}></i>
-                    <i className="card-function__delete fas fa-trash" onClick={handleDeleteTask}></i>
+                    <i className="card-function__delete fas fa-trash" onClick={() => handleDeleteTask(index)}></i>
                 </div>
             </div>
             {openUpdateModal && <UpdateModal toggleUpdate={toggleUpdate} task={taskObj} update={update} index={index} />}
