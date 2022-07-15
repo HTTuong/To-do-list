@@ -1,10 +1,39 @@
+# To-do List
+
+# Introduction
+- This is my first React project.
+- The main purpose of this project is about building a to-do list application with the basic knowledge about React.
+
+## About this project
+- In the project directory, you can interact with the UI to create, update and delete a task. 
+- An existing task can be updated or deleted. A task created contains its title, description, dealine and status. 
+- There are three statuses when creating a task such as Done, In progress and Not Yet. Each task with a specific status will display with a particular color (green for completed tasks, yellow for in-progress tasks and red for not-begin tasks). 
+- Finally, a task can be marked done by checking on the checkbox in each task card and the color of card will change to green(completed task). Completed tasks cannot be updated and can be deleted.  
+
+
+## Technologies
+- HTML
+- SCSS
+- JavaScript
+- React
+
+
+## Launch
+- Click the following link to view the project: https://httuong.github.io/To-do-list/
+
+
+## Project status
+- Finished
+
+
+## Illustrations
+<img width="1440" alt="Screen Shot 2022-07-15 at 22 05 38" src="https://user-images.githubusercontent.com/89579792/179293968-2491462e-8b5a-4ae1-971c-7f649892bd86.png">
+
+
 # Getting Started with Create React App
-This is a To do List project with React.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
-In the project directory, you can interact with the UI to create, update and delete a task. An existing task can be updated or deleted. A task created contains its title, description, dealine and status. There are three statuses when creating a task such as Done, In progress and Not Yet. Each task with a specific status will display with a particular color (green for completed tasks, yellow for in-progress tasks and red for not-begin tasks). Finally, a task can be marked done by checking on the checkbox in each task card and the color of card will change to green(completed task). Completed tasks cannot be updated and can be deleted. 
 
 ### `npm start`
 
